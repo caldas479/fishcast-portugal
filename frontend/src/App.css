@@ -9,10 +9,17 @@ body,
   padding: 0;
 }
 
-.map-container {
+#map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* full viewport height */
+  background-color: #1e1e1e; /* optional dark background */
+}
+
+.leaflet-container {
+  width: 80vw;
   height: 80vh;
-  width: 85%;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
 }
